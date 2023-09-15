@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/5822b6fbea.js" crossorigin="anonymous"></script>
+
+  </script>
+  <title>TODoList</title>
+</head>
+
+<body>
+  <!-- Main Container  -->
+  <main>
+    <!-- Input List Container -->
+    <section class="input-container">
+      <i class="fa-solid fa-list main-list-icon"></i>
+      <input type="text" placeholder="Type your todo list" data-task="input" id="input" class="inputData" required>
+    </section>
+    <i class="fa-solid fa-check"></i><span class="complete-task">Complete all task</span>
+    <div class="extra-space"></div>
+    <span class="clear-list">Clear todo list</span>
+    <hr>
+    <!-- Unordered list to add todo -->
+    <ul id="list">
+    </ul>
+    <hr>
+    <div class="footer">
+      <p><span id="taskCount" style="font-size: 18px; color: rgb(168, 167, 167);">0</span> &nbsp; &nbsp;Tasks left</p>
+      <span class="incomplete" style="margin-left: 0px;">Incomplete</span>
+      <span class="completed">Completed</span>
+    </div>
+
+    <script src="script.js"></script>
+  </main>
+</body>
+
+</html>

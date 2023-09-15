@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+  }
+  
+  body {
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* to do task container */
+  main {
+    width: 700px;
+    margin: 90px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 2px #acafb8;
+    border-radius: 15px;
+  }
+  
+  /* Input container */
+  .input-container {
+    /* position: absolute; */
+    padding: 10px 15px;
+    background-color: hsl(0, 7%, 89%);
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  input[type=text] {
+    width: 85%;
+    margin: 5px;
+    outline: none;
+    border: 0;
+    padding: 10px;
+    font-weight: 600;
+    background-color: transparent;
+  }
+  
+  .input-container:focus{
+    background-color: hsl(200, 2%, 62%);
+  }
+  
+  .main-list-icon{
+    position: fixed;
+    left: 542px;
+    top: 135px;
+    font-size: 25px;
+    color: rgb(89, 89, 89);
+  }
+  
+  
+  .fa-check{
+    color: lightgrey;
+    margin-right: 8px;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  
+  
+  .input-container a i {
+    font-size: 0.8rem;
+    border: 2.5px solid black;
+    border-radius: 50%;
+    color: hsl(209, 20%, 95%);
+    cursor: pointer;
+  }
+  
+  
+  .extra-space {
+    display: inline;
+    margin: 0px 180px;
+  }
+  
+  .input-container~span {
+    color: hsl(206, 5%, 73%);
+    font-size: 0.8rem;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+  
+  .input-container~span:hover,
+  .input-container~span:active {
+    color: hsl(210, 2%, 57%);
+  }
+  
+  
+  hr {
+    border: 0;
+    height: 2px;
+    margin: 8px 0px;
+    background-color: hsl(0, 0%, 92%);
+  }
+  
+  /* Task area */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  ul li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  ul li label {
+    margin-left: 20px;
+  }
+  
+  
+  /* btn created using js property and appended when focused on input field */
+  .btn {
+    position: absolute;
+    left: 90%;
+  }
+  
+  ul li:hover {
+    background-color: #f3f3f3;
+  }
+  
+  #list li span i {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  
+  #list li input[type=radio] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .checked {
+    text-decoration: line-through;
+  }
+  
+  /* Task count area */
+  .footer {
+    display: inline;
+    margin: 0;
+  }
+  
+  /* style for task count */
+  #taskCount {
+    width: 0;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-left: 3px;
+  }
+  
+  .footer p {
+    display: inline-block;
+    margin: 0;
+    width: 50%;
+    text-align: left;
+    font-size: 0.8rem;
+    margin-right: 100px;
+  }
+  
+  .footer span {
+    display: inline-block;
+    width: 12%;
+    text-align: right;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .footer span:hover,
+  .footer span:visited {
+    color: hsl(206, 5%, 73%);
+  }
+  
+  
+  /* buttons */
+  button {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+  }
